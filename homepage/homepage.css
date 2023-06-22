@@ -1,0 +1,308 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+/* Styling untuk navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #fff; /* Ubah warna latar belakang navbar menjadi biru */
+  padding: 10px 20px; /* Padding pada navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan pada navbar */
+}
+
+.navbar-brand {
+  font-size: 25px; /* Ukuran teks pada navbar brand */
+  font-weight: bold; /* Ketebalan teks pada navbar brand */
+  color: #fff; /* Ubah warna teks pada navbar brand menjadi putih */
+  margin-right: 55%; /* Jarak kanan pada navbar brand */
+}
+
+.navbar-brand img {
+  height: 110px; /* Ukuran gambar pada navbar brand */
+  margin-right: 10px; /* Jarak kanan pada gambar navbar brand */
+}
+
+.navbar-nav .nav-item {
+  margin-right: 20px; /* Jarak kanan antar item navbar */
+}
+
+.navbar-nav .nav-link {
+  font-size: 20px; /* Ukuran teks pada link navbar */
+  color: #fff; /* Ubah warna teks pada link navbar menjadi putih */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff0000; /* Warna teks pada link navbar saat dihover */
+}
+
+.navbar-toggler {
+  border: none; /* Hapus garis border pada tombol toggle navbar */
+  background-color: transparent; /* Hapus latar belakang pada tombol toggle navbar */
+  padding: 0; /* Hapus padding pada tombol toggle navbar */
+}
+
+.navbar-toggler-icon {
+  width: 30px; /* Ukuran ikon tombol toggle navbar */
+  height: 30px; /* Ukuran ikon tombol toggle navbar */
+  background-color: #7EA0DC ; /* Warna ikon tombol toggle navbar */
+}
+
+.navbar-toggler-icon:hover {
+  background-color: #69d2e7 ; /* Warna ikon tombol toggle navbar saat dihover */
+}
+
+.carousel-item {
+  transition: opacity 0.5s; /* Transisi perpindahan slide */
+}
+
+.carousel-item.active {
+  opacity: 1; /* Opacity slide aktif */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #000; /* Warna panah navigasi */
+  color: #fff; /* Warna panah navigasi */
+  border-radius: 50%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 30px; /* Lebar panah navigasi */
+  height: 30px; /* Tinggi panah navigasi */
+  opacity: 0.5; /* Opacity panah navigasi */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 0.9; /* Opacity panah navigasi saat dihover */
+}
+
+
+
+.container {
+  margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.card {
+  margin-bottom: 20px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+a{
+  color: #000;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.col-md-4 {
+  flex-basis: 32%;
+  text-align: left;
+}
+
+h5 {
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 5px;
+  color: #000;
+}
+
+ul.social-icons {
+  color: #000;
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+ul.social-icons li {
+  margin-right: 10px;
+}
+
+.copy {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #00BFFF;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  margin-top: 10px;
+}
+
+input[type="email"] {
+  padding: 8px;
+  border: 1px solid #1E90FF;
+  border-radius: 4px;
+  flex-grow: 1;
+}
+
+button {
+  padding: 8px 20px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+
+.copy{
+  text-align: center;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.fade {
+  animation: fade 1s linear;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+

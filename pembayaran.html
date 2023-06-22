@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Gateway</title>
+  <link rel="stylesheet" href="pembayaran/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Payment Gateway</h1>
+    <form id="checkout-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea id="address" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="payment">Payment Method:</label>
+        <select id="payment" required>
+          <option value="">Select a payment method</option>
+          <option value="credit-card">Credit Card</option>
+          <option value="paypal">PayPal</option>
+          <option value="bank-transfer">Bank Transfer</option>
+          <option value="ovo">OVO</option>
+          <option value="gopay">GoPay</option>
+        </select>
+      </div>
+      
+      <div id="credit-card-fields" class="payment-fields">
+        <!-- Credit Card Payment Fields -->
+        <div class="form-group">
+          <label for="card-number">Card Number:</label>
+          <input type="text" id="card-number" required>
+        </div>
+        <div class="form-group">
+          <label for="expiration">Expiration Date:</label>
+          <input type="text" id="expiration" required>
+        </div>
+        <div class="form-group">
+          <label for="cvv">CVV:</label>
+          <input type="text" id="cvv" required>
+        </div>
+      </div>
+      
+      <div id="paypal-fields" class="payment-fields">
+        <!-- PayPal Payment Fields -->
+        <div class="form-group">
+          <label for="paypal-email">PayPal Email:</label>
+          <input type="email" id="paypal-email" required>
+        </div>
+        <div class="form-group">
+          <label for="paypal-password">PayPal Password:</label>
+          <input type="password" id="paypal-password" required>
+        </div>
+      </div>
+      
+      <div id="bank-transfer-fields" class="payment-fields">
+        <!-- Bank Transfer Payment Fields -->
+        <div class="form-group">
+          <label for="bank">Bank:</label>
+          <select id="bank" required>
+            <option value="">Select a bank</option>
+            <option value="bca">BCA</option>
+            <option value="mandiri">Mandiri</option>
+            <option value="bni">BNI</option>
+            <option value="bri">BRI</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="account-number">Account Number:</label>
+          <input type="text" id="account-number" required>
+        </div>
+      </div>
+      
+      <div id="ovo-fields" class="payment-fields">
+        <div class="form-group">
+          <label for="ovo-number">OVO Number:</label>
+          <input type="text" id="ovo-number" required>
+        </div>
+        <div class="form-group">
+          <label for="ovo-pin">OVO PIN:</label>
+          <input type="password" id="ovo-pin" required>
+        </div>
+      </div>
+      
+      <div id="gopay-fields" class="payment-fields">
+        <div class="form-group">
+          <label for="gopay-number">GoPay Number:</label>
+          <input type="text" id="gopay-number" required>
+        </div>
+        <div class="form-group">
+          <label for="gopay-pin">GoPay PIN:</label>
+          <input type="password" id="gopay-pin" required>
+        </div>
+      </div>
+      
+      <div id="total-amount">
+        <label for="amount">Total Amount:</label>
+        <input type="text" id="amount" disabled>
+      </div>
+      
+      <button type="submit" id="place-order-btn">Place Order</button>
+      <div id="loading" class="hide">
+        <div class="loader"></div>
+        <p>Processing payment...</p>
+      </div>
+    </form>
+  </div>
+
+  <script src="pembayaran/script.js"></script>
+</body>
+</html>

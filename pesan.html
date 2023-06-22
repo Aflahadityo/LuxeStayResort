@@ -1,0 +1,69 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Kamar Hotel</title>
+    <link rel="stylesheet" href="ps/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Form Pemesanan Kamar Hotel</h1>
+      <div class="form-container">
+        <form id="order-form">
+          <div class="form-group">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="check-in">Check-in:</label>
+            <input type="date" id="check-in" name="check-in" required>
+          </div>
+          <div class="form-group">
+            <label for="check-out">Check-out:</label>
+            <input type="date" id="check-out" name="check-out" required>
+          </div>
+          <div class="form-group">
+            <label for="room-type">Tipe Kamar:</label>
+            <select id="room-type" name="room-type" required>
+              <option value="">Pilih Tipe Kamar</option>
+              <option value="standard">Standard Room</option>
+              <option value="deluxe">Deluxe Room</option>
+              <option value="suite">Suite Room</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="special-request">Special Request:</label>
+            <textarea id="special-request" name="special-request"></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label for="cancellation-policy">Cancellation Policy:</label>
+            <textarea id="cancellation-policy" name="cancellation-policy"></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label for="add-ons">Add-ons for Your Stay:</label>
+            <textarea id="add-ons" name="add-ons"></textarea>
+          </div> 
+          <a href="pembayaran.html">Pesan Sekarang</a>
+        </form>
+      </div>
+      <div class="sidemenu">
+        <h2>Kamar yang Dipesan:</h2>
+        <ul id="selected-rooms">
+          <!-- Kamar yang dipesan akan ditampilkan di sini -->
+        </ul>
+        <div id="price-details" class="price-details">
+          <!-- Detail harga akan ditampilkan di sini -->
+        </div>
+      </div>
+    </div>
+
+    <script src="ps/script.js"></script>
+  </body>
+  </html>
